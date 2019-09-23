@@ -10,8 +10,8 @@ TEST test_Add_AddOneAndZero_ReturnsOne(){
 };
 
 TEST test_Add_AddZeroAndTwo_ReturnsTwo(){
-	double actual = add(1, 0);
-	double expected = 1;
+	double actual = add(0, 2);
+	double expected = 2;
 
 	ASSERT(actual == expected, "Fail.");
 };
