@@ -24,8 +24,8 @@ TEST test_Add_AddOneAndTwo_ReturnsThree(){
 };
 
 RUN(
-		test_Add_AddOneAndZero_ReturnsOne,
-		test_Add_AddZeroAndTwo_ReturnsTwo,
-		test_Add_AddOneAndTwo_ReturnsThree
+	test_Add_AddOneAndZero_ReturnsOne,
+	test_Add_AddZeroAndTwo_ReturnsTwo,
+	test_Add_AddOneAndTwo_ReturnsThree
 );
 
