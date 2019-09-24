@@ -14,13 +14,29 @@ For example to test function `bar` defined in `foo.c` you should create `test_fo
 #include "ctestie.h"
 #include "foo.c"
 
-TEST test_bar(){
-    int actual = bar();
-    int expected = 5;
+TEST test_Bar_CaseZero_ReturnsZero(){
+    int actual = bar(0);
+    int expected = 0;
     ASSERT(actual == expected, "Fail. Got %d but expected %d", actual, expected);
 }
 
-RUN(test_bar);
+TEST test_Bar_CaseMoreThanZero_ReturnsThatNumber(){
+    int actual = bar(10);
+    int expected = 10;
+    ASSERT(actual == expected, "Fail. Got %d but expected %d", actual, expected);
+}
+
+TEST test_Bar_CaseLessThanZero_ReturnsZero(){
+    int actual = bar(-5);
+    int expected = 0;
+    ASSERT(actual == expected, "Fail. Got %d but expected %d", actual, expected);
+}
+
+RUN(
+    test_Bar_CaseZero_ReturnsZero,
+    test_Bar_CaseMoreThanZero_ReturnsThatNumber,
+    test_Bar_CaseLessThanZero_ReturnsZero
+);
 ```
   
 Test functions are defined by returning a TEST and containing a call to ASSERT. To run test functions pass pointers to them to
