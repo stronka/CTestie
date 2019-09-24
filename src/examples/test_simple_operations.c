@@ -10,14 +10,14 @@ TEST test_Add_AddOneAndZero_ReturnsOne(){
 	double actual = add(1, 0);
 	double expected = 1;
 
-	ASSERT(actual == expected, "Fail. Zero should be neutral element of addition.");
+	ASSERT(actual == expected, "Fail. Zero should be a neutral element of addition.");
 };
 
 TEST test_Add_AddZeroAndTwo_ReturnsTwo(){
 	double actual = add(0, 2);
 	double expected = 2;
 
-	ASSERT(actual == expected, "Fail. Zero should be neutral element of addition.");
+	ASSERT(actual == expected, "Fail. Zero should be a neutral element of addition.");
 };
 
 TEST test_Add_AddOneAndTwo_ReturnsThree(){
