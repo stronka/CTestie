@@ -2,7 +2,7 @@ CC=gcc
 FLAGS=
 
 EXAMPLE_DIR=src/examples
-BIN_DIR=
+BIN_DIR=bin
 INCLUDE=src/include
 
 help:
