@@ -3,7 +3,9 @@ CTestie
 Minimal unit test framework for C
 -----------
 ### About
-CTestie is a C unit test framework that is supposed to be as minimal as possible. It's implemented entirely in a single header file without external dependencies. This offers fast compile and run times. 
+CTestie is a C unit test framework that is supposed to be as minimal as possible. It's implemented entirely in a single header file without external dependencies. This offers fast compile and run times.  
+  
+[ctestie.h](https://github.com/stronka/CTestie/blob/master/src/include/ctestie.h)
 ### How to use
 Place `ctestie.h` anywhere you want and a create test file that includes `ctestie.h` and tested code. It is recommended to use one test file per translation unit and treat it as a test suite.
 For example to test function `bar` defined in `foo.c` you should create `test_foo.c` file that looks like so:
