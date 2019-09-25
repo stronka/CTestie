@@ -11,10 +11,8 @@ CTestie is a C unit test framework that is supposed to be as minimal as possible
 * There is no overhead in test files compared to some other "minimal" frameworks. You don't have to setup main or anything along that lines. You write tests and pass them to RUN. That's it.
 * Test functions are actual functions and not macro magic. This should make them easier to read and navigate.
 ### Screenshots
-->
 ![Alt text](/../screenshots/screenshots/success.png?raw=true "Success")
 ![Alt text](/../screenshots/screenshots/failure.png?raw=true "Failure")
-<-
 ### How to use
 Place `ctestie.h` anywhere you want and a create test file that includes `ctestie.h` and tested code. It is recommended to use one test file per translation unit and treat it as a test suite.
 For example to test function `bar` defined in `foo.c` you should create `test_foo.c` file that looks like so:
