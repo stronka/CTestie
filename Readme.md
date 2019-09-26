@@ -7,7 +7,7 @@ CTestie is a C unit test framework that is supposed to be as minimal as possible
   
 [ctestie.h](https://github.com/stronka/CTestie/blob/master/src/include/ctestie.h)
 ### Features
-* It's 16 LOC and two macros.
+* It's 18 LOC and two macros.
 * There is no overhead in test files compared to some other "minimal" frameworks. You don't have to setup main or anything along that lines. You write tests and pass them to RUN. That's it.
 * Test functions are actual functions and not macro magic. This should make them easier to read and navigate.
 ### Screenshots
