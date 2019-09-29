@@ -1,8 +1,11 @@
 #ifndef __CTESTIE_H__
 #define __CTESTIE_H__
+#ifdef __cplusplus
+extern "C" {
+#endif
 #include <stdio.h>
 
-typedef struct test_result{int result; char *assertion; char *message; char const *function;} TEST;
+typedef struct test_result {int result; const char *assertion; const char *message; char const *function;} TEST;
 typedef TEST (*test_function)();
 TEST __test_sentinel(){return (TEST){};};
 char _buff[100];
@@ -19,4 +22,7 @@ char _buff[100];
 
 #define _SUCCESS_SUMMARY "\x1b[32m" "[CTestie:Summary] Tests finished successfully.\n Run: %d\n Passed: %d\n Failed: %d\n" "\x1b[0m"
 #define _FAIL_SUMMARY "\x1b[31m" "[CTestie:Summary] Tests failed.\n Run: %d\n Passed: %d\n Failed: %d\n" "\x1b[0m"
+#ifdef __cplusplus
+}
+#endif
 #endif
