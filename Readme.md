@@ -56,9 +56,9 @@ test_foo:
 Then, to group tests, you may create another target that will contain all your test suites.  
 ```make
 unit:
-	test_foo
-	test_baz
-	test_some_other
+	make test_foo
+	make test_baz
+	make test_some_other
 ```
 ### Examples
 To build code from examples directory please refer to help provided in Makefile via command:  
